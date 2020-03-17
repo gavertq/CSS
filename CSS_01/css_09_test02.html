@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+
+		
+		#wrap{display: flex; flex-flow:column; width: 80%; height: 700px; margin: 0 auto; border: 2px solid black; text-align: center;}
+		/*flex=가로정렬 / flex-flow:row= 가로정렬(flex 설정시 기본) / flex-flow:column=세로정렬 / margin: 0 auto=가운데 맞춤  */
+		
+		.div_01{background-color: red; height: 20%;}
+		.div_02{background-color: gold; height: 15%;}
+		
+		.div_03{display: flex; flex-flow:row; margin: 0 auto; width:100%; height: 50%;}
+		.div_03_section{display: flex; flex-flow:column; margin: 0 auto; background-color: green; width: 130%;}
+		.div_03_section_1{background-color: pink; margin: 0 auto; width: 80%; border: 2px solid black;}
+		
+		.div_03_aside{background-color: skyblue; width: 70%;}
+		
+		.div_04{background-color: pink; height: 15%;}
+
+		
+		
+	</style>
+</head>
+<body>
+
+	<div id="wrap">
+		<div class="div_01"><header><h1 style="margin-top: 40px;"> < header > </h1></header></div>
+		
+		<div class="div_02"><nav><h4> < nav > </h4></nav></div>
+		
+		<div class="div_03">
+			<div class="div_03_section"> <section><h4> < section > </h4></section>
+				<div class="div_03_section_1" style="margin-bottom: 20px;">1</div>
+				<div class="div_03_section_1" style="margin-bottom: 20px;">2</div>
+				<div class="div_03_section_1">3</div>
+			</div>
+			<div class="div_03_aside"><aside><h4> < aside > </h4></aside></div>
+		</div>
+		
+		<div class="div_04"><footer><h3> < footer > </h3></footer></div>
+	</div>
+	
+</body>
+</html>

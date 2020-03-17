@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+
+		
+		#wrap{display: flex; flex-flow:column; width: 80%; height: 700px; margin: 0 auto; border: 4px solid black; text-align: center;}
+		/*flex=가로정렬 / flex-flow:row= 가로정렬(flex 설정시 기본) / flex-flow:column=세로정렬 / margin: 0 auto=가운데 맞춤  */
+		.div01{height: 150px; background-color: red; text-align: center; border: 1px solid black;}
+		
+		.div02{display: flex; flex-flow:row; border: 1px solid black; height: 400px;}
+		.nav{order:1; background-color: gold; border: 1px solid black; width: 120px; height: 400px;}
+		.section{order:2; background-color: green; border: 1px solid black; width: 350px; height: 400px; padding-top: 30px;}
+		.aside{order:3; background-color: gold; border: 1px solid black; width: 150px; height: 400px;}
+		
+		.div02_1{display: flex; flex-flow: column;}
+		.div02_1 div{margin: 0 0 30px 50px; width: 250px; height: 40px; border: 3px solid black; text-align: center;}
+		
+		.div03{height: 150px; border: 1px solid black; background-color: pink;}
+		
+		
+		.header{padding-top: 10px; font-variant:bold; font-size: 30px;}
+
+	</style>
+</head>
+<body>
+
+	<div id="wrap">
+		<div class="div01"><header class="header"><h2>< header ></h2></header></div>
+		
+		<div class="div02">
+			<div> <nav class="nav">  nav  </nav> </div>
+			<div class="div02_1"> <section class="section">  section 
+				<div style="background-color: skyblue; margin-top: 50px;">1</div>
+				<div style="background-color: gold;">2</div>
+				<div style="background-color: pink;">3</div>
+			 </section> </div>
+			<div> <aside class="aside"> aside </aside> </div>
+		</div>
+		
+		<div class="div03"><footer> <br> <h3> < footer > </h3> </footer></div>
+	</div>
+	
+</body>
+</html>

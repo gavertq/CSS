@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		.div01{display: flex;}
+		.a{order: 1;}
+		.b{order: 2;}
+		.c{order: 3;}
+		
+		#wrap{display: flex; flex-flow:column; width: 90%; height: 200px; margin: 0 auto; border: 4px solid black; text-align: center;}
+		/*flex=가로정렬 / flex-flow:row= 가로정렬(flex 설정시 기본) / flex-flow:column=세로정렬 / margin: 0 auto=가운데 맞춤  */
+		#wrap div{width: 33.33%;}
+		#wrap div:first-child{order:2; background: gray;} 	/*order=정렬 순서*/
+		#wrap div:nth-child(2){order:1; background: silver;}
+		#wrap div:nth-child(3){order:3; background: aliceblue;}		
+
+	</style>
+</head>
+<body>
+
+	<div id="wrap">
+		<div class="div01">
+			<div class="a" style="background-color: pink;">1</div>
+			<div class="b" style="background-color: purple;">2</div>
+			<div class="c" style="background-color: yellow;">3</div>
+		</div>
+		
+		<div><h1>two</h1></div>
+		
+		<div><h1>3</h1></div>
+	</div>
+	
+</body>
+</html>

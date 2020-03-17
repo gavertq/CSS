@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	.div{border: 3px solid black; width: 516px; height:444px; margin: 0 auto;} /*width: 500px:넓이 고정 / margin: 0 auto:가운데 정렬*/
+	.fix{overflow: auto;}	
+	.header{border: 1px solid black; text-align: center; background-color: aliceblue;}
+	.nav{background-color:gold; float: left; width: 100px; height: 250px; border: 1px solid black; text-align: center}
+	.section{background-color:green; float: left; width: 270px; height: 250px;  border: 1px solid black; text-align: center}
+	.aside{background-color:purple; float: left; width:140px; height: 250px; border: 1px solid black; text-align: center}
+	
+	.footer{background-color:pink; float: left; height: 100px; width: 510px; border: 1px solid black; text-align: center}
+	
+	*{box-sizing: border-box;}	/*밖의 라인 기준으로 크기 고정*/
+	div{width: 510px;} /*크기는 150*/
+</style>
+
+</head>
+<body>
+<div class="div fix">
+	<!-- 헤더 -->
+	<header class="header"><h1> < header > </h1></header>
+	
+<div>
+	<!-- 내비 -->
+	<nav class="nav" style="width: 150px">
+		<br>
+		<span>< nav ></span>
+	</nav>
+	
+	<!-- 섹션 -->
+	<section class="section" style="width: 360px">
+		<br>
+		<span>< section ></span>
+	</section>
+
+</div>
+
+<!-- footer -->
+	<footer class="footer"> <br>< footer ></footer>
+
+</div>
+
+		<hr>
+
+<div class="div fix">
+	<!-- 헤더 -->
+	<header class="header"><h1> < header > </h1></header>
+	
+<div>
+	<!-- 내비 -->
+	<nav class="nav">
+		<br>
+		<span>nav</span>
+	</nav>
+	
+	<!-- 섹션 -->
+	<section class="section">
+		<br>
+		<span>section 1</span>
+	</section>
+	
+	<!-- aside -->
+	<aside class="aside">
+		<br>
+		<span> aside </span>
+	</aside>
+</div>
+
+<!-- footer -->
+	<footer class="footer"> <br>< footer ></footer>
+
+</div>
+
+</body>
+</html>
