@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	#wrap{display: flex; flex-flow: column; margin: 0 auto;	width: 80%; max-width: 900px;}
+					
+			/*헤더 영역*/
+			.header{order:1; display: flex; flex-flow: row; width: 100%; text-align: center;}
+			.title{font-size: 1.5em; font-weight: bold; font-style: italic;}
+			.img_h{width: 70px; height: 70px;}
+			
+			/*내비게이션*/
+			.nav{order:2; width: 100%;}
+			.nav ul li{ list-style:none; height:40px; padding: 15px;}
+			.nav ul li a{padding: 20px 5px; font-size:1.5em; color: black; text-decoration:none;} /*위아래 padding 20, 왼오 padding 0*/
+			
+			/*섹션 영역*/
+			.section{order: 3; display: flex; flex-flow: column;}
+			.section_img1{order: 1; width:80%; height: 250px; margin-left: 30px;}
+			.section_img2{order:2; width:80%; height: 250px; margin-left: 30px;}
+			
+			/*오늘의 맛집*/
+			.div02{display: flex; flex-flow: column; width: 100%;}
+			.div02 h3{font-size: 2.0em;}
+			.div02 article{font-size:1.5em; width: 100%;}
+			.div02 article img{ width: 100%; height: 200px;}
+			
+			/*로그인_news*/
+			.div_news{}
+			.button{}
+			
+			/*footer 영역*/
+			.footer{order: 5; text-align: left; width: 100%;}
+			.footer p{padding: 5px; font-size: 0.8em; font-style: italic;}
+			
+		/*PC용 CSS*/
+		@media all and (min-width:960px){		
+		#wrap{position:relative; width:80%;}/*위에서 설정하고 아래서 따로 설정안하면 그 설정 유지. 새로 설정하면 새로 설정한값 적용*/
+						
+			/*헤더 영역*/
+			.header{order:1; display: flex; flex-flow: row;}
+			.title{width: 50%; font-size: 2.2em;}
+			.img_h{box-shadow:5px 5px 10px #000000; width: 100px; height: 100px;}
+			
+			/*내비게이션*/
+			.nav{order:2; align-items: center;}
+			.nav ul{display:flex;  background-color: gray; height: 40px; padding-left: 120px;}
+			.nav ul li{padding: 10px;}
+			.nav ul li a{color:white; font-size:1.1em; margin-left: 30px; padding: 0px;}
+			.nav ul li a:hover{color:purple; background-color: white;}
+			
+			/*섹션 영역*/
+			.section{order: 3; display: flex; flex-flow: row;}
+			.div01{display: flex; flex-flow: column; width: 15%;}
+			.section_img1{order: 1; width: 90%; height: 100px; background: center;  margin-left: 0px;}
+			.section_img2{order: 2; width: 90%; height: 100px; background: center;  margin-left: 0px; padding-top: 5px;}
+			.p{order:2;}
+			
+			/*오늘의 맛집*/
+			.div02{display: flex; flex-flow: column; width: 55%; margin-left: 20px;}
+			.div02 h3{font-size:1.2em; margin: 1px;}
+			.div02 article{float:left; font-size:1.0em; margin-top: 1px;}
+			.div02 article img{width: 50px;; height: 50px;}
+			
+			/*로그인_news*/
+			.div_news{order:4; width: 30%;}
+			.button{height: 50px;}
+			
+			/*footer 영역*/
+			.footer{order: 5;}
+			.footer p{font-size: 0.8m;}
+		}
+		
+	}
+</style>
+
+</head>
+<body>
+<div id="wrap">
+	<header class="header">
+		<img src="resources/images/맛집.png" class="img_h"> <p class="title">맛집탐방 이야기 ^^</p>
+	</header>
+	
+	<nav class="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">게시판</a></li>
+			<li><a href="#">내정보</a></li>
+		</ul>
+	</nav>
+	
+	<section class="section">
+		<div class="div01">
+			<img src="resources/images/l_정우성.jpg" class="section_img1">
+			<img src="resources/images/l_aside.gif" class="section_img2">	
+			<p class="p">맛집 장터 맛집 이야기 시작 합니다</p>
+		</div>
+		
+		<div class="div02">
+			<h3> < 오늘의 맛집 > </h3>
+			<article>오늘 방문한 곳은 맛있는 음식이 나오는 집<img src="resources/images/맛집01.jpg"></article>
+			<article>오늘 방문한 곳은 맛있는 음식이 나오는 집<img src="resources/images/맛집02.jpg"></article>
+			<article>오늘 방문한 곳은 맛있는 음식이 나오는 집<img src="resources/images/맛집03.jpg"></article>
+		</div>
+		
+		<div class="div_news">
+			<table>
+				<tr>
+					<td><input type="text"></td>
+					<td colspan="2"><input type="button" value="로그인" class="button"></td>
+				</tr>
+				<tr>
+					<td><input type="text"></td>										
+				</tr>
+			</table>
+			<a href="#">회원가입</a>	/   <a href="#">ID/PW찾기</a>
+			
+			<section>
+				<article>
+					<h3>오늘의 뉴스</h3>
+					날씨: 30도<br>
+					미세먼지: 농도 심함<br>
+					운세: 누구보다 좋음
+				</article>
+			</section>
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<hr>
+		<p><font style="color: green"> CARE LAB</font> Copyright © AllRights Reserved
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;® 1999 | 회사소개 | TEL : 777-777</p>
+	</footer>
+</div>
+</body>
+</html>
